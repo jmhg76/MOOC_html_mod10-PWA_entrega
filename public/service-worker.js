@@ -24,11 +24,11 @@ const FILES_TO_CACHE = [ // Archivos a la caché, los que se necesitenen cada Ap
     '/assets/shot2.png',
     '/assets/you_win.png',
 
-    '/icons/character128.png',
-    '/icons/character192.png',
-    '/icons/character256.png',
-    '/icons/character512.png',
-    '/icons/character640.png',
+    '/icons/camera128.png',
+    '/icons/camera192.png',
+    '/icons/camera256.png',
+    '/icons/camera512.png',
+    '/icons/camera640.png',
 
     '/Character.js',
     '/Entity.js',
