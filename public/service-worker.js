@@ -32,10 +32,6 @@ const FILES_TO_CACHE = [ // Archivos a la caché, los que se necesitenen cada Ap
     '/icons/character512.png',
     '/icons/character640.png',
 
-
-    '/files/install.js',
-    '/files/manifiest.json',
-
     '/Character.js',
     '/Entity.js',
     '/game.css',
@@ -45,7 +41,7 @@ const FILES_TO_CACHE = [ // Archivos a la caché, los que se necesitenen cada Ap
     '/Opponent.js',
     '/Player.js',
     '/Shot.js',
-    // '/files/install.js' // ... conforme añadimos archivos a la App los añadimos a la caché
+    '/files/install.js' // ... conforme añadimos archivos a la App los añadimos a la caché
 
 ];
 // <!-- Fin - Esto es lo que varía de un service worker -->
