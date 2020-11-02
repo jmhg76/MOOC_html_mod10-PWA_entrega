@@ -33,8 +33,28 @@
 </head>
 
 <body>
+    <!-- Inicio - Código necesario para instalación de App -->
+    <button id="butInstall" aria-label="Install" hidden>Instalar App Invasores Vs Evadidos - PWA version</button>
+    <!-- Fin - Código necesario para instalación de App -->
+
     <button id="pause" class="gamebutton" onclick="this.blur();">Pausa</button>
     <button id="reset" class="gamebutton" onclick="this.blur();">NUEVA PARTIDA</button>
+
+    <!-- Inicio - Código necesario para registro de Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) { // Se comprueba si el navegador dispone de la funcionalidad 'serviceWorker'
+            window.addEventListener('load', () => { // Al finalizar la carga de la página
+                // Archivo que contiene el service-worker, debe estar en la raiz del proyecto
+                navigator.serviceWorker.register('service-worker.js').then((reg) => { // El registro nos devuelve una promesa
+                    console.log(`Service Worker registrado: ${reg}`);
+                })
+            })
+        }
+    </script>
+    <!-- Fin - Código necesario para registro de Service Worker -->
+    <!-- Inicio - Código necesario para instalación de App -->
+    <script src="files/install.js"></script>
+    <!-- Fin - Código necesario para instalación de App -->
 </body>
 
 </html>

@@ -1,8 +1,3 @@
-//
-// Módulo 10: PWAs: Progressive Web Applications - Entrega P2P: Creando nuestra PWA
-//
-// 1. Añadir un manifest
-//
 {
     "name": "Invasores Vs Evadidos",
     "short_name": "IvsE",
