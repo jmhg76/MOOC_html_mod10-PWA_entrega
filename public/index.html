@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Shooter Game</title>
-  <link type="text/css" rel="stylesheet" href="game.css">
-  <meta name="viewport" content="user-scalable=0"/>
-  <script src="Game.js" type="text/javascript"></script>
-  <script src="Entity.js" type="text/javascript"></script>
-  <script src="Character.js" type="text/javascript"></script>
-  <script src="Player.js" type="text/javascript"></script>
-  <script src="Opponent.js" type="text/javascript"></script>
-  <script src="Shot.js" type="text/javascript"></script>
-  <script src="main.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+
+    <!-- Inicio - Necesario para PWA -->
+    <link rel="manifest" href="files/manifiest.json">
+    <!-- Igual que en manifiest.json -->
+    <meta name="theme-color" content="#6200ee">
+    <!-- Para dispositivos apple que, aún, no cumplen totalmente con el estándar -->
+    <meta name="apple-mobile-web-app-title" content="Invasores Vs Evadidos - PWA version">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="files/icons/character192.png">
+    <!-- Fin - Necesario para PWA -->
+    <meta name="author" content="Juan Manuel Hernández">
+    <!-- Inicio - Necesario para Accesibilidad -->
+    <meta name="descripion" content="Invasores Vs Evadidos - PWA version">
+    <!-- Fin - Necesario para Accesibilidad -->
+
+    <title>Invasores Vs Evadidos</title>
+
+    <link type="text/css" rel="stylesheet" href="game.css">
+    <meta name="viewport" content="user-scalable=0" />
+    <script src="Game.js" type="text/javascript"></script>
+    <script src="Entity.js" type="text/javascript"></script>
+    <script src="Character.js" type="text/javascript"></script>
+    <script src="Player.js" type="text/javascript"></script>
+    <script src="Opponent.js" type="text/javascript"></script>
+    <script src="Shot.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
 </head>
 
 <body>
-  <button id="pause" class="gamebutton" onclick="this.blur();">Pausa</button>
-  <button id="reset" class="gamebutton" onclick="this.blur();">NUEVA PARTIDA</button>
+    <button id="pause" class="gamebutton" onclick="this.blur();">Pausa</button>
+    <button id="reset" class="gamebutton" onclick="this.blur();">NUEVA PARTIDA</button>
 </body>
 
 </html>
