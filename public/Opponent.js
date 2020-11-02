@@ -5,7 +5,7 @@ class Opponent extends Character {
     /**
      * @param game {Game} La instancia del juego al que pertenece el oponente
      */
-    constructor (game) {
+    constructor(game) {
         const height = OPPONENT_HEIGHT * game.width / 100,
             width = OPPONENT_WIDTH * game.width / 100,
             x = getRandomNumber(game.width - width / 2),
@@ -22,7 +22,7 @@ class Opponent extends Character {
     /**
      * Crea un nuevo disparo
      */
-    shoot () {
+    shoot() {
         if (!this.dead && !this.game.ended) {
             if (!this.game.paused) {
                 this.game.shoot(this);
@@ -34,7 +34,7 @@ class Opponent extends Character {
     /**
      * Actualiza los atributos de posición del oponente
      */
-    update () {
+    update() {
         if (!this.dead && !this.game.ended) {
             this.y += this.speed;
             if (this.y > this.game.height) {
@@ -63,13 +63,13 @@ class Opponent extends Character {
      * Mata al oponente
      */
     collide() {
-        
         if (!this.dead) {
             setTimeout(() => {
                 this.game.removeOpponent();
             }, 2000);
             super.collide();
+            // 2.	Modificar el código del método collide de la clase Opponent para que sume un punto a score cada vez que se dispara a un triángulo.
+            this.game.score++;
         }
-
     }
 }

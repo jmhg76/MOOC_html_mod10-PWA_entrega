@@ -7,6 +7,7 @@
 # Módulo 10: PWAs: Progressive Web Applications - Entrega P2P: Creando nuestra PWA
 
 Versión: 4 de Julio de 2020
+Autor: Juan Manuel Hernández
 
 ## Objetivo
 
@@ -40,11 +41,18 @@ Se pide modificar el código proporcionado para transformarlo en una PWA:
 
 Para ello debes seguir los siguientes pasos:
 
-1. Añadir un manifest.
-2. Añadir un Service Worker.
-3. Manejar las caches.
-4. Añadir la opción de instalar con un botón adicional.
-5. Desplegar en glitch.
+0. Creación de un clone en repositorio propio de github clonado del indicado en la práctica
+0. 1. Descarga local con
+```
+$ git clone https://github.com/jmhg76/MOOC_html_mod10-PWA_entrega.git
+```
+0. 2. Modifcaciones en el código de la App para que tengan la funcionalidad de la entrega P2P del Módulo 5
+
+1. Añadir un manifest. --> Conseguido
+2. Añadir un Service Worker. --> Conseguido
+3. Manejar las caches. --> Conseguido
+4. Añadir la opción de instalar con un botón adicional. --> Conseguido
+5. Desplegar en glitch. --> Conseguido
 
 
 ## Prueba de la práctica

@@ -41,9 +41,9 @@ function installPWA(evt) { // ... manejador del instalador ... si queremos logar
     deferredInstallPrompt.userChoice // ... capturamos la elección del usuario cuando se muestra el prompt de instalación ...
         .then((choice) => { // ... mediante una promesa ...
             if (choice.outcome === 'accepted') {
-                console.log('User accepted the A2HS prompt', choice);
+                console.log('El usuario aceptó la instalación de Invasores Vs Evadidos a través del prompt', choice);
             } else {
-                console.log('User dismissed the A2HS prompt', choice);
+                console.log('El usuario NO aceptó la instalación de Invasores Vs Evadidos a través del prompt', choice);
             }
             deferredInstallPrompt = null;
         });
@@ -60,6 +60,6 @@ window.addEventListener('appinstalled', logAppInstalled); // ... Añadimos el ú
  */
 function logAppInstalled(evt) { // ... sólo registramos que el evento ocurrió ... pero podríamos hacre otras cosas
     // CODELAB: Add code to log the event
-    console.log('Weather App was installed.', evt);
+    console.log('Invasores Vs Evadidos versión PWA instalada.', evt);
 
 }

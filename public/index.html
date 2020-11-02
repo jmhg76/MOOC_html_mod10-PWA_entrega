@@ -30,6 +30,9 @@
     <script src="Opponent.js" type="text/javascript"></script>
     <script src="Shot.js" type="text/javascript"></script>
     <script src="main.js" type="text/javascript"></script>
+    <!-- 6.	Crear una clase nueva llamada Boss en un nuevo fichero llamado Boss.js (no te olvides de importarlo en index.html). Esta clase debe heredar los métodos y atributos necesarios de la clase Opponent sobreescribiendo aquellos que sean necesarios para lograr la funcionalidad requerida. Para representar al jefe final puedes usar las imágenes jefe.png y jefe_muerto.png de la carpeta assets. //-->
+    <script src="Boss.js" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -39,6 +42,14 @@
 
     <button id="pause" class="gamebutton" onclick="this.blur();">Pausa</button>
     <button id="reset" class="gamebutton" onclick="this.blur();">NUEVA PARTIDA</button>
+
+    <!--
+      5.	Añadir el código necesario para pintar la puntuación y las vidas en la pantalla del juego en todo momento. Para ello crea una lista (etiqueta ul de HTML) con dos elementos (etiqueta li). El primero, con id "scoreli", mostrará la puntuación con el siguiente formato: Score: x, siendo x el valor del atributo score del juego. El segundo, con id livesli, mostrará el nº de vidas con el siguiente formato: Lives: y, siendo y el valor del atributo lives del jugador. Para actualizar el HTML con los valores de puntuación y vidas utiliza el método innerHTML del elemento HTML correspondiente (es importante no utilizar el método innerText puesto que es incompatible con la herramienta de autocorreccióngi).      
+    -->
+    <ul class="scoreboard">
+        <li id="scoreli" class="scoreboard"></li>
+        <li id="livesli" class="scoreboard"></li>
+    </ul>
 
     <!-- Inicio - Código necesario para registro de Service Worker -->
     <script>

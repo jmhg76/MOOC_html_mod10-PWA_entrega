@@ -1,34 +1,58 @@
 html {
-  overflow: hidden;
+    overflow: hidden;
 }
 
-.Opponent {
-	animation: rotation 3s infinite linear;
-	-webkit-animation: rotation 3s infinite linear;
+.Opponent,
+.Boss {
+    /* Para que el BOSS gire igual que Opponent */
+    animation: rotation 3s infinite linear;
+    -webkit-animation: rotation 3s infinite linear;
 }
 
-.paused .Opponent {
-	animation: none;
-	-webkit-animation: none;
+.paused .Opponent,
+.paused .Boss {
+    /* Para que el BOSS pause el giro igual que Opponent */
+    animation: none;
+    -webkit-animation: none;
 }
 
 @-webkit-keyframes rotation {
-	from {
-		transform: rotate(0deg);
-		-webkit-transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(359deg);
-		-webkit-transform: rotate(359deg);
-	}
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+    }
 }
 
 .gamebutton {
-	border: none;
-	background: #ddd;
-	color: #333;
-	padding: 10px 20px;
-	outline: none;
-	font-family: monospace;
-	cursor: pointer;
+    border: none;
+    background: #ddd;
+    color: #333;
+    padding: 10px 20px;
+    outline: none;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+
+/*
+5.	Añadir el código necesario para pintar la puntuación y las vidas en la pantalla del juego en todo momento. Para ello crea una lista (etiqueta ul de HTML) con dos elementos (etiqueta li). El primero, con id "scoreli", mostrará la puntuación con el siguiente formato: Score: x, siendo x el valor del atributo score del juego. El segundo, con id livesli, mostrará el nº de vidas con el siguiente formato: Lives: y, siendo y el valor del atributo lives del jugador. Para actualizar el HTML con los valores de puntuación y vidas utiliza el método innerHTML del elemento HTML correspondiente (es importante no utilizar el método innerText puesto que es incompatible con la herramienta de autocorreccióngi).
+*/
+
+ul.scoreboard {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li.scoreboard {
+    display: inline-flex;
+    width: 7.1em;
+    border: 2px solid #333;
+    margin-top: 10px;
+    padding: 5px;
+    font-family: monospace;
 }
