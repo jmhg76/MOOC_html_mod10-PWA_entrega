@@ -11,16 +11,14 @@ const CACHE_NAME = 'static-cache-v9'; // Nombre de la caché
 
 // CODELAB: Add list of files to cache here.
 const FILES_TO_CACHE = [ // Archivos a la caché, los que se necesitenen cada App ...
-    //'/offline.html', // ... conforme añadimos archivos a la App los añadimos a la caché
-    '/assets/',
-    '/assets/bueno.png',
     '/assets/bueno_muerto.png',
+    '/assets/bueno.png',
     '/assets/clases.png',
     '/assets/game_over.png',
-    '/assets/jefe.png',
     '/assets/jefe_muerto.png',
-    '/assets/malo.png',
+    '/assets/jefe.png',
     '/assets/malo_muerto.png',
+    '/assets/malo.png',
     '/assets/screenshot.png',
     '/assets/shot1.png',
     '/assets/shot2.png',
@@ -38,6 +36,7 @@ const FILES_TO_CACHE = [ // Archivos a la caché, los que se necesitenen cada Ap
     '/Game.js',
     '/index.html',
     '/main.js',
+    '/offline.html', // ... conforme añadimos archivos a la App los añadimos a la caché
     '/Opponent.js',
     '/Player.js',
     '/Shot.js',
